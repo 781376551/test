@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>index</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/shou.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+        var docEl = document.documentElement,
+            //当设备的方向变化（设备横向持或纵向持）此事件被触发。绑定此事件时，
+            //当前浏览器不支持orientationChange事件的时候我们绑定了resize 事件。
+            //总来的来就是监听当然窗口的变化，一旦有变化就需要重新设置根字体的值
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            reCalc = function () {
+                //设置根字体大小
+                //docEl.style.fontSize = 20 * (docEl.clientWidth / 320) + 'px';
+                docEl.style.fontSize = docEl.clientWidth / 7.5 + 'px';
+            };
+
+        //绑定浏览器缩放与加载时间
+        window.addEventListener(resizeEvt, reCalc, false); //浏览器缩放
+        document.addEventListener('DOMContentLoaded', reCalc, false);
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <img src="imgs/Group 6.png" alt="" class="head_img">
+        <div class="wrap">
+            <ul class="phone clear">
+                <li>用户名：</li>
+                <li>136****3479</li>
+                <li>
+                    <img src="imgs/home_icon_write.png" alt="" class="write">
+                </li>
+            </ul>
+            <ul class="quan clear">
+                <li class="quan1"></li>
+                <li class="quan2">
+                    <div class="qli">领取积分</div>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap con">
+            <div class="game_d">
+                <div class="gad">
+                    <img src="imgs/home_title.png" alt="" class="game_img">
+                </div>
+
+            </div>
+
+            <ul class="game">
+
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script src="js/index.js"></script>
+
+</html>

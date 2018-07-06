@@ -1,0 +1,193 @@
+#div {
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    color: #333333;
+    font-size: .32rem;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 11.2% 8.3% 0;
+    overflow-y: scroll;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    content: "";
+    width: 0;
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.num {
+    display: flex;
+    align-items: center;
+    height: 1.05rem;
+    line-height: 1.05rem;
+    padding: .80rem 0;
+    border-bottom: 1px solid #D1D1D1;
+    
+}
+
+.num_con {
+    float: left;
+    /* height: 1.05rem; */
+    /* line-height: 1.05rem; */
+}
+
+.num_qu {
+    
+}
+
+.num_x {
+    line-height: .8rem;
+    color: #979797;
+    padding: 0 .305rem 0 .46rem;
+}
+
+.num_shu {
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    font-size: .95rem;
+}
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #999999;
+    font-size: .4rem;
+}
+
+.num_yzm {
+    font-size: .3rem;
+    color: #5286F3;
+    float: right;
+}
+
+.right {
+    justify-content: space-between;
+}
+
+.reg {
+    justify-content: center;
+    background: #EEEEEE;
+    border-radius: 8px;
+    font-size: 1.06rem;
+    border: none;
+    margin-top: 2.65rem;
+}
+
+.text {
+    text-align: center;
+    color: #ffffff;
+    /* font-size:.36rem; */
+}
+
+/* //首页 */
+
+.head_img {
+    width: 100%;
+    height: 6.5rem;
+    display: inherit;
+}
+
+#box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.write{
+    width:.26rem;
+    height: 0.26rem;
+    margin-left:.19rem;
+}
+.wrap {
+    margin-top:-.02rem;
+    padding: .26rem .3rem 0;
+    background-image: linear-gradient(-180deg, #005EF1 0%, #246FC5 100%);
+}
+
+.phone li {
+   
+    float: left;
+    font-size: .26rem;
+    color: #FFFFFF;
+    letter-spacing: 0.009rem;
+    text-align: justify;
+}
+
+.quan {
+    margin-top: .14rem;
+    height: 1.28rem;
+}
+
+.quan li {
+    float: left;
+    height: 100%;
+}
+
+.quan1 {
+    width: 3.94rem;
+}
+
+.quan2 {
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.qli {
+    width:2.44rem;
+    height:.78rem;
+    line-height:.78rem;
+    margin-left: .51rem;
+    background-image: linear-gradient(90deg, #EB2546 0%, #FF5B4D 100%);
+    border-radius: 8px;
+    font-size: .36rem;
+    color: #FFFFFF;
+    letter-spacing: .0125rem;
+    text-align: center;    
+}
+.game{
+    position: relative;
+    width: 100%;
+    height: 3.76rem;
+    background: #ffffff;
+    padding-top:.57rem;
+}
+.con{
+    padding-top:1rem;
+    position: relative;
+    background:#246FC5;
+}
+.game_d{
+    position: absolute;
+    top: .43rem;
+    left: 0;
+    height: 1.5rem;
+    width: 100%;
+    z-index: 1;
+}
+.game_img{
+    height: 1.5rem;
+    width: 100%;
+}
+.gad{
+    position: relative;
+}
